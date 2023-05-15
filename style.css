@@ -1,0 +1,231 @@
+:root{
+    --BGCOLOR:#f5f5f5;
+    --LIGHTCOLOR: #fff;
+    --Button: #6FC247;
+    --ALTCOLOR: #F9F9F9 ;
+    --COLOR: #D7D7D7;
+    --DARKCOLOR: #000;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: var(--LIGHTCOLOR);
+    width:100%;
+    margin: 0 auto 20px;
+    font-size: 20px;
+}
+
+.header{
+    background-color: var(--LIGHTCOLOR);
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.05);
+    display:flex;
+    place-content: center; 
+    left: 0px;
+    padding: 10px;
+}
+
+.header img{
+    margin-top: 15px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 15px;
+    padding-right: 100px;
+    padding-left: 50px;
+    color: #636363;
+    place-content: center;
+}
+
+li{
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 27px;
+} 
+
+a{
+    text-decoration: none;
+    color: #636363;
+}
+
+a:hover{
+    color:var(--Button);
+}
+li#home a{
+    color:  #065666;
+}
+
+.about{
+    line-height: 40px;
+    text-align: center;
+    color: #373737;
+    margin-top: 40px;
+}
+
+#demo{
+    background-color:var(--Button);
+    color: var(--LIGHTCOLOR);
+    border: none; 
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#demo:hover{
+    background-color: var(--LIGHTCOLOR);
+    color: var(--Button);
+    border: 2px solid var(--Button);
+}
+
+#demo img:hover{
+background-color: var(--LIGHTCOLOR);
+    color: var(--Button);
+    border: 2px solid var(--Button);
+}
+
+#login{
+    background-color: var(--LIGHTCOLOR);
+    color: var(--Button);
+    border: 2px solid var(--Button);
+    padding: 10px;
+    border-radius: 10px;
+    width:200px;
+    height: auto;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#login:hover{
+    color: var(--LIGHTCOLOR);
+    background-color: var(--Button);
+}
+ 
+.trust{
+    text-align:center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.sub-container{
+    background-color: var(--DARKCOLOR);
+    color: var(--COLOR);
+    padding: 70px 100px;
+    justify-content: space-around;
+    left:0px;
+}
+
+.valutico{
+    line-height: 1.5rem;
+    padding-bottom: 25px; 
+    width:70%;
+}
+
+.valutico h2{
+    padding-bottom: 15px;
+}
+
+#sub-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: no-wrap;
+}
+
+#sub-container h4{
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+.sub-container p{
+    font-size: 16px;
+}
+#sub-container p{    
+    width: 60%;
+}
+
+.rows{
+    display: flex;
+    place-content:center;
+    margin: 30px;
+}
+.row1, .row2, .row3{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    width: 250px;
+}
+.rows img{
+    width: 100%;
+    background-color: var(--ALTCOLOR);
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+section{
+    display: flex;
+    flex-direction:column;
+    float: left;
+    width:50%;
+    padding:30px;
+    padding-bottom: 30px;
+    font-size:large;
+    margin-left: 100px;
+}
+div.personalize, .valuation, .access{
+    padding: 15px;
+}
+ aside{
+    float:right;
+    margin-right: 120px;
+    padding:30px; 
+} 
+aside img{
+    height: 340px;
+    width: 300px;
+    float: right;
+    place-content: center;
+}
+section, aside{
+    padding-top: 80px;
+    padding-bottom: 0px;
+} 
+
+#request{
+    background-color:var(--Button);
+    color: var(--LIGHTCOLOR);
+    border: none;
+    flex-direction: row;
+    align-items: flex-end;
+    place-content:center;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 20px 0px 50px;
+    clear: both;
+    cursor: pointer;
+}
+
+#request:hover{
+    background-color: var(--LIGHTCOLOR);
+    color: var(--Button);
+    border: 2px solid var(--Button);
+}
+
+#request img:hover{
+    background-color: var(--LIGHTCOLOR);
+    color: var(--Button);
+    border: 2px solid var(--Button);
+}
