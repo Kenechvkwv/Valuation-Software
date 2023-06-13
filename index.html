@@ -6,130 +6,203 @@
   <meta name="viewport" content="width=device-width">
   <title>Valuation Software</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/Images/favicon.jpeg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="./Images/logo (2).png" height="23px">
-            </div>
-
-            <nav class="list">
-                <ul id="menu options">
-                    <li id="home"><a href="#">Home</a></li>
-                    <li><a href="#">Solutions</a> <img src="./Images/Vector.png"> </li>
-                    <li><a href="#">Your work</a> <img src="./Images/Vector.png"> </li>
-                    <li><a href="#">Company</a>   <img src="./Images/Vector.png"> </li>
-                </ul>
-            </nav> 
-
-            <div class="demo">
-                <button id="demo">
-                    Request a Demo
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
-                      </svg>
-                </button>
-            </div>    
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="./Images/logo (2).png" height="23px">
         </div>
 
+            <ul class="navItems">
+                <li>
+                    <a href="#" class="home">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="solutions">Solutions
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" width="20px">
+                       <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>    
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="#"> Private Company Valuations</a>
+                        <a href="#"> Listed Company Valuations</a>
+                        <a href="#"> Valutico Platform</a>
+                        <a href="#"> My Valutico</a>
+                        <a href="#"> [Coming Soon] Impairment Testing</a>
+                        <a href="#"> [Coming Soon] ESG</a>
+                    </div>      
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="solutions">Your work
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" width="20px">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                          </svg>   
+                    </a>
+
+                    <div class="dropdown-content">
+                        <a href="#"> Advisory</a>
+                        <a href="#"> Investment Management</a>
+                        <a href="#"> Corporates</a>
+                    </div> 
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="solutions">Company
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5" width="20px">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>    
+                    </a> 
+
+                    <div class="dropdown-content">
+                        <a href="#"> News/ Blog</a>
+                        <a href="#"> Press</a>
+                        <a href="#"> Resources</a>
+                        <a href="#"> Career</a>
+                        <a href="#"> FAQs</a>
+                        <a href="#"> Partner Stories</a>
+                    </div> 
+                </li>
+            </ul>
+            
+            <div class="nav-btn">
+                <a href="#" class="requestDemo">
+                    <span>Request a Demo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="20px">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
+                      </svg>
+                </a>
+            </div>
+    </nav>
+
+    <main>
         <div class="about" id="about">
             <h1 class="heading">The World's Leading Business Valuation Software</h1>
             <p>
                 Valutico provides the financial services, industry and valuation experts with data driven tools to perform accurate company valuations faster and more accurately than ever before.
             </p>
-        
-            <button type="submit" id="demo" >
-                Request a Demo
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
-                  </svg>
-            </button>
-            <button type="submit" id="login">Sign up/ Login</button>
-              
-             <img src="./Images/image1-2.png" alt="Valutico.com">
+        </div>    
+
+        <div class="dem">
+            <div class="nav-btn">
+                <a href="#" class="requestDemo">
+                    <span>Request a Demo</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="20px">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
+                      </svg>
+                </a>
+            </div>
+
+            <div class="login-btn">
+                <a href="#" class="login">
+                    <span>Sign / Login</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="img-valutico">
+            <img src="./Images/image1-2.png" alt="Valutico.com">
         </div>
 
         <div class="trust">
-           <h3>Trusted by Hundreds of Financial Firms in 75 Countries</h3>
-           <p>Our team of more than 50 employees is globally distributed and serves both national and international clients in over 75 Countries</p>
-        </div>
-           <div class="rows">
-           <div class="row1">
-               <div class="item1"><img src="./Images/image1.png"></div>
-               <div class="item2"><img src="./Images/image2.png"></div>
-               <div class="item3"><img src="./Images/image3.png"></div>
-           </div>
-           <div class="row2">
-                <div class="item1"><img src="./Images/image4.png"></div>
-                <div class="item2"><img src="./Images/image5.png"></div>
-                <div class="item3"><img src="./Images/image6.png"></div>
+            <h3>Trusted by Hundreds of Financial Firms in 75 Countries</h3>
+            <p>Our team of more than 50 employees is globally distributed and serves both national and international clients in over 75 Countries</p>
+         </div>
+
+        <div class="rows">
+            <div class="row1">
+                <div class="item1"><img src="./Images/image1.png"></div>
+                <div class="item2"><img src="./Images/image2.png"></div>
+                <div class="item3"><img src="./Images/image3.png"></div>
             </div>
-            <div class="row3">
-               <div class="item1"><img src="./Images/image7.png"></div>
-               <div class="item2"><img src="./Images/image8.png"></div>
-               <div class="item3"><img src="./Images/image9.png"></div>
-               </div>   
-           
-            <div class="row3">
-               <div class="item1"><img src="./Images/image10.png"></div>
-               <div class="item2"><img src="./Images/image11.png"></div>
-               <div class="item3"><img src="./Images/image12.png"></div>
-           </div>   
-           </div>
-          
-           <div class="sub-container">
+            <div class="row2">
+                 <div class="item1"><img src="./Images/image4.png"></div>
+                 <div class="item2"><img src="./Images/image5.png"></div>
+                 <div class="item3"><img src="./Images/image6.png"></div>
+             </div>
+             <div class="row3">
+                <div class="item1"><img src="./Images/image7.png"></div>
+                <div class="item2"><img src="./Images/image8.png"></div>
+                <div class="item3"><img src="./Images/image9.png"></div>
+                </div>   
+            
+             <div class="row3">
+                <div class="item1"><img src="./Images/image10.png"></div>
+                <div class="item2"><img src="./Images/image11.png"></div>
+                <div class="item3"><img src="./Images/image12.png"></div>
+            </div>   
+        </div>
+
+        <div class="container">
             <div class="valutico">
                 <h2>Why Valutico?</h2>
                 <p>An award-winning fintech providing a range of company valuation solutions, Valutico provides
                     the financial services industry and valuation experts with data-driven tools.</p>
             </div>
             <div id="sub-container">
-            <div>
-                <h4>Secure</h4>
-                <p>Private by default, creating a safe space around your projects and your data.</p>
+                <div>
+                    <h4>Secure</h4>
+                    <p>Private by default, creating a safe space around your projects and your data.</p>
+                </div>
+                <div>
+                    <h4>Reliable</h4>
+                    <p>Created by valuation experts for valuation professionals.</p>
+                </div>
+                <div>
+                    <h4>Dedicated to your success</h4>
+                    <p>24/7 support and multi-language capabiliities to support your needs.</p>
+                </div>
             </div>
-            <div>
-                <h4>Reliable</h4>
-                <p>Created by valuation experts for valuation professionals.</p>
-            </div>
-            <div>
-                <h4>Dedicated to your success</h4>
-                <p>24/7 support and multi-language capabiliities to support your needs.</p>
-            </div>
-            </div>
-           </div>
+        </div>
 
-           <section id="accurations">
+        <section id="accurations">
+            <div class="left-section">
                 <h3>Accurate Valuations in Minutes</h3>
-                <p>Find the company data you need in seconds, with 3TB of global financial data featuring almost 1 million transactions and over 50,000 thousand comparable peers </p>
+                <p>
+                    Find the company data you need in seconds, with 3TB of global financial data featuring almost 1 million transactions and over 50,000 thousand comparable peers 
+                </p>
 
-            <div>
-                <h4>Personalize Your Reports</h4>
-                <p>Save hours transferring results from spreadsheet to slides, by exporting your results to Powerpoint and Word templates effortlessly</p>
+                <div class="leftItems">
+                    <h4>Personalize Your Reports</h4>
+                    <p>
+                        Save hours transferring results from spreadsheet to slides, by exporting your results to Powerpoint and Word templates effortlessly
+                    </p>
+                </div>
+                <div class="leftItems">
+                    <h4>28 Valuation Method Options</h4>
+                    <p>
+                        From loss-making companies to mature enterprises, and from startups to SME's, value businesses of any type using multiple valuation methods. 
+                    </p>
+                </div>
+                <div class="leftItems">
+                    <h4>Fast access to Premium Data</h4>
+                     <p>
+                        Access the most highly-trusted global databases of company financial data to locate the figures you need.    
+                     </p>
+               </div>
             </div>
-            <div>
-                <h4>28 Valuation Method Options</h4>
-                <p>From loss-making companies to mature enterprises, and from startups to SME's, value businesses of any type using multiple valuation methods. </p>
-            </div>
-            <div>
-                <h4>Fast access to Premium Data</h4>
-                <p>Access the most highly-trusted global databases of company financial data to locate the figures you need.</p>
-            </div>
-           </section>
 
-            <aside class="image">
+            <div class="right-section">
                 <img src="./Images/image13.png">
-            </aside>
-            <div class="button">
-                <button type="submit" id="request">
-                    Request a Demo
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
-                      </svg>
-                </button>
             </div>
-    </div>
+        </section>
+    </main>
+
+        <div class="footer-btn">
+            <a href="#" class="requestDemo" id="requestDemo">
+                <span>Request a Demo </span>
+                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6  h-6" width="20px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" />
+                  </svg>
+            </a>
+        </div>
 </body>
+
 </html>
