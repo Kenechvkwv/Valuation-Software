@@ -14,7 +14,8 @@
 }
 
 body{
-    font-family: 'Manrope';
+    font-family: 'Manrope', 'Times New Roman';
+    width: 100%;
     height: auto;
 }
 
@@ -24,12 +25,13 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     min-height: 8vh;
     background-color: var(--LIGHTCOLOR);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     padding: 30px 20px;
     position: relative;
-    font-family: 'Manrope';
+    font-family: 'Manrope', 'Times New Roman';
     font-weight: 700px;
     font-size: 16px;
 }
@@ -41,13 +43,9 @@ body{
     justify-content: space-around;
 }
 
-li svg{
-    position: absolute;
-    top: 35px;
-}
-
 li .home{
     color: #065666;
+    filter: brightness(150%);
 }
 
 li a {
@@ -114,14 +112,14 @@ li a{
 .dem{
     display: flex;
     justify-content: center;
-    gap: 16px;
     align-items: center;
+    gap: 16px;
 }
 
 /* Styling the About Div */
 
 .about{
-    font-family: 'Manrope';
+    font-family: 'Manrope', 'Times New Roman';
     text-align: center;
     color: #373737;
     margin: 50px 90px;
@@ -159,7 +157,7 @@ li a{
     transition: all ease-in 0.3s;
 }
 
-.img-valutico{
+.img-valutico img{
     width: 100%;
     height: auto;
     margin-top: 30px;
@@ -184,13 +182,15 @@ li a{
 
 .rows{
     display: flex;
-    place-content:center;
+    align-items: center;
+    justify-content:center;
     margin: 30px;
+    margin-right: 0px;
 }
-.row1, .row2, .row3{
-    display: flex;
+.rows > div{
+    /* display: flex;
     place-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     width: 250px;
 }
 .rows img{
@@ -198,15 +198,18 @@ li a{
     background-color: var(--ALTCOLOR);
     width: 200px;
     height: 100px;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 15px;
 }
+    /* End */
 
 .container{
     background-color: var(--DARKCOLOR);
     color: var(--COLOR);
+    background-attachment: fixed;
     padding: 70px 100px;
     justify-content: space-around;
+    width: 100%;
 }
 
 .container > div {
@@ -228,7 +231,6 @@ li a{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    flex-wrap: no-wrap;
 }
 
 #sub-container h4{
@@ -248,18 +250,16 @@ section{
     display: flex;
     flex-direction: row;
     font-size:large;
-    position: absolute;
-    left: 130px;
+    margin-left: 130px;
 }
 
-#accurations > div{
+section > div{
     padding: 30px;
 }
 
 .left-section > div{
-    position: relative;
-    left: 32px; 
     padding-bottom: 15px;
+    margin-left: 32px;
 }
 
 .left-section h3{
@@ -294,15 +294,125 @@ section{
 
 /* Styling the Footer Btn */
 
-.footer-btn{
-    display: block;
-    flex-direction: column;
+footer{
+    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 100px;
 }
 
- #requestDemo{
-    position: relative;
-    top: 570px;
-    left: 530px;
-} 
+/* Screen Responsive */
+
+/* Responsive Screen For Mobile Phones */
+
+@media (max-width: 768px) {
+    .nav-bar{
+        display: none;
+    }
+    .img-valutico img{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }   
+
+    .rows{
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 30px;
+    }   
+    .rows > div{
+        max-width: 200px;
+    }
+    .row1 > img{
+        max-width: 100px;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }  
+    .rows img{
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .container > div {
+        margin: 15px;
+        width: 100%;
+    }
+    .valutico{
+        line-height: 1.5rem;
+        padding-bottom: 0px; 
+    }    
+    #sub-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #sub-container p{    
+        width: 100%;
+    }
+    .container p{
+        padding-bottom: 1rem;
+    }
+
+    section{
+        display:flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    
+    section > div{
+        padding: 30px;
+    }
+    
+    .left-section > div{
+        padding-bottom: 15px;
+        margin-left: 16px;
+    }
+    
+    .left-section h3{
+        font-size: 32px;
+    }
+    .right-section{
+        text-align: center;
+    }
+    .right-section img{
+        height: 400px;
+        width: 300px;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}
+
+/*Responsive Screen For Tablets and Ipads*/
+@media(min-width: 769px) and (max-width:1023px){
+    /* .nav-bar{
+        display:none;
+    } */
+    .right-section img{
+        height: 400px;
+        width: 350px;
+    }
+
+    .rows > div{
+        width: 200px;
+    }
+    .row1 > img{
+        max-width: 100px;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }  
+    .rows img{
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media(min-width: 1024){
+    .rows > div{
+        width: 400px;
+    }
+}
